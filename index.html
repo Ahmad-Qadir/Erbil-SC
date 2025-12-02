@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon - Erbil SC Registration</title>
+  <title>Coming Soon - Erbil SC</title>
   <link rel="icon" type="image/png" href="./img/logo.png">
   
   <!-- Material Design Bootstrap CSS -->
@@ -21,7 +21,9 @@
     
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: linear-gradient(135deg, rgba(18,54,99,0.9), rgba(24,78,119,0.9)), url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=1600&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -278,41 +280,32 @@
   <div class="particles" id="particles"></div>
   
   <!-- Main content -->
-  <div class="coming-soon-container">
-    <!-- Logo -->
-    <div class="logo-wrapper">
-      <img src="./img/logo.png" alt="Erbil SC Logo" class="logo">
+  <div class="coming-soon-container" style="position:relative; z-index:10; text-align:center; padding:2rem; max-width:900px; width:100%;">
+    <div class="logo-wrapper" style="margin-bottom:2rem; animation: logoFloat 3s ease-in-out infinite;">
+      <img src="./img/logo.png" alt="Erbil SC Logo" class="logo" style="width:220px; height:220px; object-fit:contain; filter: drop-shadow(0 15px 35px rgba(0,0,0,0.3));">
     </div>
-    
-    <!-- Title -->
-    <h1 class="title">Coming Soon</h1>
-    <p class="subtitle">Something amazing is on its way</p>
-    
+    <h1 class="title" style="color:#fff; font-size:3rem; font-weight:700; margin-bottom:1rem; text-shadow:0 5px 15px rgba(0,0,0,0.3);">Coming Soon</h1>
+    <p class="subtitle" style="color: rgba(255,255,255,0.9); font-size:1.2rem; font-weight:300; margin-bottom:2rem; text-shadow:0 2px 10px rgba(0,0,0,0.2);">Erbil SC Football is getting a fresh new experience.</p>
     <!-- Countdown -->
-    <div class="countdown">
-      <div class="countdown-item" data-mdb-ripple-init>
-        <span class="countdown-value" id="days">00</span>
-        <span class="countdown-label">Days</span>
+    <div class="countdown" style="display:flex; justify-content:center; gap:2rem; flex-wrap:wrap; margin-bottom:2rem;">
+      <div class="countdown-item" data-mdb-ripple-init style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); border-radius: 20px; padding: 2rem 2.5rem; min-width: 140px; border: 2px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease;">
+        <span class="countdown-value" id="days" style="display:block; font-size:3.5rem; font-weight:700; color:#fff; line-height:1; margin-bottom:0.5rem; text-shadow:0 3px 10px rgba(0,0,0,0.3);">00</span>
+        <span class="countdown-label" style="display:block; font-size:1rem; font-weight:400; color:rgba(255,255,255,0.9); text-transform:uppercase; letter-spacing:2px;">Days</span>
       </div>
-      <div class="countdown-item" data-mdb-ripple-init>
-        <span class="countdown-value" id="hours">00</span>
-        <span class="countdown-label">Hours</span>
+      <div class="countdown-item" data-mdb-ripple-init style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); border-radius: 20px; padding: 2rem 2.5rem; min-width: 140px; border: 2px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease;">
+        <span class="countdown-value" id="hours" style="display:block; font-size:3.5rem; font-weight:700; color:#fff; line-height:1; margin-bottom:0.5rem; text-shadow:0 3px 10px rgba(0,0,0,0.3);">00</span>
+        <span class="countdown-label" style="display:block; font-size:1rem; font-weight:400; color:rgba(255,255,255,0.9); text-transform:uppercase; letter-spacing:2px;">Hours</span>
       </div>
-      <div class="countdown-item" data-mdb-ripple-init>
-        <span class="countdown-value" id="minutes">00</span>
-        <span class="countdown-label">Minutes</span>
+      <div class="countdown-item" data-mdb-ripple-init style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); border-radius: 20px; padding: 2rem 2.5rem; min-width: 140px; border: 2px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease;">
+        <span class="countdown-value" id="minutes" style="display:block; font-size:3.5rem; font-weight:700; color:#fff; line-height:1; margin-bottom:0.5rem; text-shadow:0 3px 10px rgba(0,0,0,0.3);">00</span>
+        <span class="countdown-label" style="display:block; font-size:1rem; font-weight:400; color:rgba(255,255,255,0.9); text-transform:uppercase; letter-spacing:2px;">Minutes</span>
       </div>
-      <div class="countdown-item" data-mdb-ripple-init>
-        <span class="countdown-value" id="seconds">00</span>
-        <span class="countdown-label">Seconds</span>
+      <div class="countdown-item" data-mdb-ripple-init style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); border-radius: 20px; padding: 2rem 2.5rem; min-width: 140px; border: 2px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease;">
+        <span class="countdown-value" id="seconds" style="display:block; font-size:3.5rem; font-weight:700; color:#fff; line-height:1; margin-bottom:0.5rem; text-shadow:0 3px 10px rgba(0,0,0,0.3);">00</span>
+        <span class="countdown-label" style="display:block; font-size:1rem; font-weight:400; color:rgba(255,255,255,0.9); text-transform:uppercase; letter-spacing:2px;">Seconds</span>
       </div>
     </div>
-    
-    <!-- Message -->
-    <p class="message">
-      We're working hard to bring you an enhanced experience. <br>
-      Stay tuned for the New Year launch!
-    </p>
+    <!-- <a href="#" class="btn btn-light btn-lg" data-mdb-ripple-init>Notify Me</a> -->
   </div>
   
   <!-- Material Design Bootstrap JS -->
@@ -323,48 +316,14 @@
     document.addEventListener('DOMContentLoaded', function() {
       const rippleElements = document.querySelectorAll('[data-mdb-ripple-init]');
       rippleElements.forEach(element => {
-        new mdb.Ripple(element, {
-          rippleColor: 'light'
-        });
+        new mdb.Ripple(element, { rippleColor: 'light' });
       });
     });
-    
-    // Countdown Timer to New Year
-    function updateCountdown() {
-      const now = new Date();
-      const currentYear = now.getFullYear();
-      const newYear = new Date(currentYear + 1, 0, 1, 0, 0, 0);
-      
-      const diff = newYear - now;
-      
-      if (diff <= 0) {
-        // New Year has arrived
-        document.getElementById('days').textContent = '00';
-        document.getElementById('hours').textContent = '00';
-        document.getElementById('minutes').textContent = '00';
-        document.getElementById('seconds').textContent = '00';
-        return;
-      }
-      
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-      
-      document.getElementById('days').textContent = String(days).padStart(2, '0');
-      document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-      document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-      document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-    }
-    
-    // Update countdown every second
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-    
-    // Generate animated particles
+
+    // Generate animated particles background
     function createParticles() {
       const particlesContainer = document.getElementById('particles');
-      const particleCount = 50;
+      const particleCount = 40;
       
       for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
@@ -382,6 +341,36 @@
     }
     
     createParticles();
+
+    // Countdown Timer to New Year
+    function updateCountdown() {
+      const now = new Date();
+      const currentYear = now.getFullYear();
+      const newYear = new Date(currentYear + 1, 0, 1, 0, 0, 0);
+      const diff = newYear - now;
+
+      if (diff <= 0) {
+        document.getElementById('days').textContent = '00';
+        document.getElementById('hours').textContent = '00';
+        document.getElementById('minutes').textContent = '00';
+        document.getElementById('seconds').textContent = '00';
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('days').textContent = String(days).padStart(2, '0');
+      document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    }
+
+    // Start the countdown
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
   </script>
 </body>
 </html>

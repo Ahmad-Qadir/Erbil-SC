@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Erbil Sport Club</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    }
+    .navbar {
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%) !important;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 1.6rem;
+    }
+    .glass {
+      background: rgba(255,255,255,0.15);
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+      backdrop-filter: blur(7px);
+      -webkit-backdrop-filter: blur(7px);
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+    .section-divider {
+      width: 80px;
+      height: 5px;
+      background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+      border-radius: 3px;
+      margin: 1.5rem auto 2.5rem auto;
+      opacity: 0.7;
+    }
+    .btn-success {
+      border-radius: 2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px rgba(30,60,114,0.10);
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .btn-success:hover {
+      background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+      box-shadow: 0 4px 16px rgba(30,60,114,0.18);
+    }
+    .form-control:focus {
+      border-color: #2a5298;
+      box-shadow: 0 0 0 0.2rem rgba(42,82,152,0.15);
+    }
+    .footer {
+      background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+      color: #fff;
+      letter-spacing: 1px;
+      font-size: 1.1rem;
+    }
+    @media (max-width: 767px) {
+      .glass { padding: 1.5rem !important; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="home.html">
+        <img src="img/club-logo.png" alt="Logo" width="40" height="40" class="me-2" style="border-radius:50%;box-shadow:0 2px 8px rgba(30,60,114,0.15);">
+        Erbil Sport Club
+      </a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html#teams">Teams</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="container py-5">
+    <div class="section-divider"></div>
+    <h2 class="fw-bold mb-4 text-center" style="color:#1e3c72;">Contact Us</h2>
+    <form class="glass p-4 mx-auto" style="max-width:600px;">
+      <div class="row mb-3">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <input type="text" class="form-control form-control-lg" placeholder="Your Name" required />
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control form-control-lg" placeholder="Your Email" required />
+        </div>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control form-control-lg" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-success btn-lg px-5">Send Message</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-4 mt-5">
+    <div class="container">
+      <div class="mb-2">
+        <img src="img/club-logo.png" alt="Logo" width="36" height="36" style="border-radius:50%;vertical-align:middle;box-shadow:0 2px 8px rgba(30,60,114,0.10);">
+      </div>
+      &copy; 2025 <span style="color:#ffd700;">Erbil Sport Club</span>. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+</body>
+</html>
